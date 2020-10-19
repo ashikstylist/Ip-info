@@ -19,7 +19,7 @@
             }
   </style>
 </head>
-<body>
+<body onload="emptyalert()">
 
  <div style="background-color: white;max-width: 25rem;position:relative;margin:auto;top:10vh;left:0;bottom:0;right:0; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="card  mb-3 " >
       <br>
@@ -43,7 +43,13 @@
       </div>
     </div>    
  
+    
 <script>
+
+    function emptyalert(){
+        alert("Click 'Find' directly to display your IP details.");
+    }
+
     function data(){
 
 $(document).ready( function() {
