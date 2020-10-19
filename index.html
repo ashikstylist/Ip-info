@@ -55,8 +55,12 @@ var ip_addr = document.getElementById('ip').value;
    $.getJSON("https://freegeoip.app/json/"+ip_addr+" " ,function(result){
      display.empty();
 
+		display.append("<span style='text-align:center;font-size:15px; background: linear-gradient(to right, #141e30, #243b55);color:white;padding:10px;width:100%;border-radius:20px;'>"+result['ip']+"</span>");
+		display.append("<h5 style='text-align:center;margin-top:15px;'>Country <i class='fas fa-caret-right'></i> <b>"+result['country_name']+"</b></h5>");
+		display.append("<h5 style='text-align:center'>Region <i class='fas fa-caret-right'></i> <b>"+result['region_name']+"</b></h5>");
+        display.append("<h5 style='text-align:center'>City <i class='fas fa-caret-right'></i> <b>"+result['city']+"</b></h5>");
 
-     }); 
+     });
 
 
 
